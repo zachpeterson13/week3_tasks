@@ -10,9 +10,9 @@
 -export([start/2, stop/1]).
 
 start(_StartType, _StartArgs) ->
-    week3_tasks_sup:start_link().
+  week3_tasks_sup:start_link().
 
 stop(_State) ->
-    ok.
+  ok.
 
 %% internal functions
