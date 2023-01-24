@@ -114,7 +114,7 @@ handle_call({remove, Item}, _From, List) ->
   {reply, ok, lists:delete(Item, List)};
 handle_call(list, _From, List) ->
   {reply, List, List};
-handle_call(remove_all, _From, List) ->
+handle_call(remove_all, _From, _List) ->
   {reply, ok, []}.
 
 %%--------------------------------------------------------------------

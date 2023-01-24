@@ -94,7 +94,7 @@ handle_call({add, N1, N2}, _From, State) ->
   {reply, N1 + N2, State};
 handle_call({subtract, N1, N2}, _From, State) ->
   {reply, N1 - N2, State};
-handle_call({divide, N1, 0}, _From, State) ->
+handle_call({divide, _N1, 0}, _From, State) ->
   {reply, divide_by_zero_error, State};
 handle_call({divide, N1, N2}, _From, State) ->
   {reply, N1 / N2, State};
